@@ -1,0 +1,11 @@
+.headerTitle{
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.navbar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--tertiary-color);
+}

@@ -1,0 +1,61 @@
+/* NORMALIZE */
+html{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.5rem;
+}
+
+h3{
+    font-size:1.25rem;
+}
+
+h4{
+    font-size:1.125rem;
+}
+
+h5{
+    font-size:1rem;
+}
+
+h6{
+    font-size:0.875rem;
+}
+
+/* CSS VARIABLES */
+    /* Light Mode Colors */
+:root{
+    /* Colors */
+    --primary-color: rgb(51,51,51);
+    --primary-color-75: rgba(51,51,51,0.75);
+    --secondary-color: rgb(112,112,112);
+    --secondary-color-75: rgba(112,112,112,0.75);
+    --tertiary-color: rgb(221,221,221);
+    --tertiary-color-75: rgba(221,221,221,0.75);
+
+    /* Backgrounds */
+    --background-color-primary: rgb(255,255,255);
+    --background-color-secondary: rgb(244,244,244);
+
+    /* Accent color */
+    --accent-color: rgb(255,165,0);
+    --accent-color-25: rgb(255,165,0,0.25);
+}
+
+
+/*           */
+.icon{
+    width:2rem ;
+    fill: var(--primary-color);
+}
