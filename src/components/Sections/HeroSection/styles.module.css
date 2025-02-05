@@ -1,0 +1,35 @@
+.avatarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.125rem;
+    height: 8.125rem;
+    background-color: gray;
+    border-radius: 50%;
+    box-shadow: black 2px 3px 10px  ;
+}
+
+
+.heroContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 2.7rem); /* 2.7rem is the header height */
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.625rem;
+}
+
+.textContainer > h3 , .textContainer > h1{
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.textContainer > h1{
+    color: var(--accent-color);
+}
