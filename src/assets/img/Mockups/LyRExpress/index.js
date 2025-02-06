@@ -1,5 +1,5 @@
-import DestktopMockup from "./desktop.png";
+import DesktopMockup from "./desktop.png";
 import MobileMockup from "./mobile.png";
 import TabletMockup from "./tablet.png";
 
-export { DestktopMockup, MobileMockup, TabletMockup };
+export { DesktopMockup, MobileMockup, TabletMockup };

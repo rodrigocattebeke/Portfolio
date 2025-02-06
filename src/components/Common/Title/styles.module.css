@@ -8,6 +8,8 @@
     min-height: 2.875rem;
     border-top:1px solid var(--accent-color);
     border-bottom:1px solid var(--accent-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .titleContainer > *{

@@ -1,1 +1,12 @@
 
+
+.imgContainer > img{
+    aspect-ratio: 12/9;
+    object-fit: cover;
+}
+
+.carousel{
+    max-width: 370px;
+    border-radius: 6px;
+    overflow-x: hidden;
+}
