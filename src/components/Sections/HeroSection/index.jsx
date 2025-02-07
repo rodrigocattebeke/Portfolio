@@ -1,9 +1,10 @@
 import { Button } from "@/components/Common/Button";
 import styles from "./styles.module.css";
+import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
-    <section className={`${styles.heroContainer}`}>
+    <section className={`${styles.heroContainer} container-xl bg-1`}>
       <div className={`${styles.infoContainer}`}>
         <div className={`${styles.avatarContainer}`}>
           <img src="#"></img>
@@ -14,7 +15,9 @@ export const HeroSection = () => {
           <h3>Desarrollador Frontend</h3>
         </div>
         <div>
-          <Button accentColor={"true"}>¡Contáctame!</Button>
+          <Link to={"#contactForm"}>
+            <Button accentColor={"true"}>¡Contáctame!</Button>
+          </Link>
         </div>
       </div>
     </section>

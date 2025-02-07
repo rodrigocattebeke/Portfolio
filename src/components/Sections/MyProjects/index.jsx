@@ -3,7 +3,7 @@ import { ProjectCard } from "@/components/Projects/ProjectCard";
 
 export const MyProjects = () => {
   return (
-    <section className={`container section`}>
+    <section className={`container-xl section bg-1`}>
       <Title>
         <h2>Mis Proyectos</h2>
       </Title>

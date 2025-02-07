@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.cardAvatar{
+    width: 100%;
+    max-width: 7.2rem ;
+    height: auto;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: gray;
+}
+
+.cardBody {
+    text-align: center;
+}
+
+.cardBody p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cardContacts{
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+

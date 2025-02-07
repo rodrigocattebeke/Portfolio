@@ -2,7 +2,7 @@ import { Title } from "@/components/Common/Title";
 import styles from "./styles.module.css";
 export const AboutMe = () => {
   return (
-    <section className={`${styles.sectionContainer} container section`}>
+    <section className={`${styles.sectionContainer} container-xl section bg-2`}>
       <Title>
         <h2>Sobre Mí</h2>
       </Title>

@@ -1,9 +1,8 @@
 .titleContainer{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: max-content;
-    min-width: 12rem;
+    text-align: center;
+    width: auto;
     height: auto;
     min-height: 2.875rem;
     border-top:1px solid var(--accent-color);
@@ -14,5 +13,6 @@
 
 .titleContainer > *{
     margin: 0;
+    word-break:keep-all
 }
 

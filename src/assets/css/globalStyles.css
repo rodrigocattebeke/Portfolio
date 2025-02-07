@@ -61,8 +61,18 @@ h6{
 
 
 /*           */
+.bg-1{
+    background-color: var(--background-color-primary);
+}
+
+.bg-2{
+    background-color: var(--background-color-secondary);
+}
+
+
 .icon{
-    width:2rem ;
+    width:2.5rem ;
+    height: 2.5rem;
     fill: var(--primary-color);
 }
 
