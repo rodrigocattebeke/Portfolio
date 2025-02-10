@@ -1,6 +1,7 @@
 import { ServiceCard } from "@/components/Common/ServiceCard";
 import { AutorenewIcon, EngineeringIcon, ForumIcon, WebIcon } from "@/assets/icons";
 import { Title } from "../../Common/Title";
+import styles from "./styles.module.css";
 
 export const Services = () => {
   const devProjects = {
@@ -28,23 +29,25 @@ export const Services = () => {
   };
 
   return (
-    <section className="bg-1 container-xl section">
+    <section className={`${styles.container} container-xl section`}>
       <Title>
         <h2>¿Qué te ofrezco?</h2>
       </Title>
 
-      <div className="row" style={{ gap: "2.65rem" }}>
-        <div className="col-12 d-flex justify-content-center align-items-center">
-          <ServiceCard icon={devProjects.icon} title={devProjects.title} body={devProjects.body} />
-        </div>
-        <div className="col-12 d-flex justify-content-center align-items-center">
-          <ServiceCard icon={responsiveDev.icon} title={responsiveDev.title} body={responsiveDev.body} />
-        </div>
-        <div className="col-12 d-flex justify-content-center align-items-center">
-          <ServiceCard icon={update.icon} title={update.title} body={update.body} />
-        </div>
-        <div className="col-12 d-flex justify-content-center align-items-center">
-          <ServiceCard icon={comunication.icon} title={comunication.title} body={comunication.body} />
+      <div className="container">
+        <div className="row" style={{ rowGap: "2.65rem" }}>
+          <div className="col-12 col-lg-6 d-flex justify-content-center align-items-top">
+            <ServiceCard icon={devProjects.icon} title={devProjects.title} body={devProjects.body} />
+          </div>
+          <div className="col-12 col-lg-6 d-flex justify-content-center align-items-top">
+            <ServiceCard icon={responsiveDev.icon} title={responsiveDev.title} body={responsiveDev.body} />
+          </div>
+          <div className="col-12 col-lg-6 d-flex justify-content-center align-items-top">
+            <ServiceCard icon={update.icon} title={update.title} body={update.body} />
+          </div>
+          <div className="col-12 col-lg-6 d-flex justify-content-center align-items-top">
+            <ServiceCard icon={comunication.icon} title={comunication.title} body={comunication.body} />
+          </div>
         </div>
       </div>
     </section>

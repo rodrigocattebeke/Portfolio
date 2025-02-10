@@ -19,7 +19,7 @@
 }
 
 .cardContainer{
-    gap: 1rem;
+    row-gap: 1rem;
 }
 
 .cardDescription > ul{

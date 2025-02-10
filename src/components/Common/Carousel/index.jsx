@@ -1,7 +1,6 @@
 import styles from "./styles.module.css";
 
 export const Carousel = ({ imgArray = [] }) => {
-  console.log(imgArray);
   return (
     <div id="carouselCaptions" className={`${styles.carousel} carousel slide`}>
       <div className="carousel-indicators">

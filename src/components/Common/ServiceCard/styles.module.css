@@ -5,10 +5,13 @@
     align-items: center;
     width: auto;
     max-width: 18.75rem;
+    height: auto;
+    min-height: 20.6rem ;
     gap: 1rem;
     padding: 1.5rem 1rem;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 0 20px;
+    background-color: var(--background-color-primary);
 }
 
 .card *{

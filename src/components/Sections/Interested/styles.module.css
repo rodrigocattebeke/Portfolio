@@ -1,0 +1,9 @@
+.container{
+    background-color: var(--background-color-secondary);
+}
+
+@media screen and (min-width: 992px) {  /* 992px is lg breakpoint in bootstrap */
+    .container{
+        background-color: var(--background-color-primary);
+    }
+}

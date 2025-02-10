@@ -10,11 +10,14 @@
     max-width: 28.2rem;
     padding: 1.5rem 1rem;
     background-color: var(--tertiary-color-75);
+    box-shadow: .1rem .2rem .4rem rgba(0, 0, 0, 0.05);
+    margin-bottom: 200px;
 }
 
 
 .form input{
     width: 100%;
+    padding: .2rem ;
     border: none;
     border-bottom: 2px solid var(--secondary-color-75);
     background-color: transparent;
@@ -23,6 +26,7 @@
 
 
 .form textarea{
+    padding: .5rem;
     background-color: transparent;
     border: 2px solid var(--secondary-color-75);
     border-radius: 3px;
@@ -31,5 +35,5 @@
 
 .form input:focus , .form textarea:focus{
     outline: none;
-    box-shadow: 0 .35rem 10px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 .35rem 0.625rem -0.25rem rgba(0, 0, 0, 0.175);
 }
