@@ -12,6 +12,12 @@
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 0 0 20px;
     background-color: var(--background-color-primary);
+    transform: translateX(-100vw);
+    transition: transform 1.5s ease-in-out;
+}
+
+.card.isVisible{
+    transform: translateX(0);
 }
 
 .card *{

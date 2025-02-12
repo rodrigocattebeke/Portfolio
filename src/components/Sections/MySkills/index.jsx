@@ -3,7 +3,7 @@ import { SkillsCard } from "@/components/Common/SkillsCard";
 
 export const MySkills = () => {
   return (
-    <section className="container-xl section bg-2 d-lg-none">
+    <section id="skills" className="container-xl section bg-2 d-lg-none">
       <Title>
         <h2>Mis Habilidades</h2>
       </Title>

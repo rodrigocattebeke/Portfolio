@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 export const Interested = () => {
   return (
-    <section className={`${styles.container} container-xl section`}>
+    <section id="interested" className={`${styles.container} container-xl section`}>
       <Title>
         <h2>¿Interesado?</h2>
       </Title>

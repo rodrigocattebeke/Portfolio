@@ -5,6 +5,7 @@
     justify-content: center;
     width: 8.125rem;
     height: 8.125rem;
+    animation: fallElement 2s cubic-bezier(0.075, 0.82, 0.5, 1); 
 }
 
 .avatarContainer {
@@ -20,6 +21,10 @@
 }
 
 .contactButton{
+    animation: fallElement 5s cubic-bezier(.8, .1, .15, 1); 
+}
+
+.contactButton.active{
     animation: scale 2.3s ease-in-out infinite;
 }
 
@@ -37,6 +42,10 @@
     align-items: center;
     justify-content: center;
     gap: 1.625rem;
+}
+
+.textContainer{
+    animation: fallElement 3.4s cubic-bezier(0.6, 0, 0.1, 1); 
 }
 
 .textContainer > h3 , .textContainer > h1{
@@ -57,5 +66,17 @@
     }
     100%{
         transform: scale(1)
+    }
+}
+
+
+@keyframes fallElement {
+    0%{
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }

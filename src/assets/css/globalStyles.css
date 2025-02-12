@@ -83,3 +83,9 @@ h6{
     gap: 2.5rem;
     padding: 2rem 1rem 3rem 1rem;
 }
+
+@media screen and (min-width: 992px){   /* 992px is lg breakpoint value*/
+    .section{
+        scroll-margin-top: 2.7rem ;
+    }
+}

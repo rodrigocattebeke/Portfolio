@@ -3,6 +3,10 @@ import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
+  const onClick = (e) => {
+    e.target.closest(".offcanvas").querySelector(".btn-close").click();
+  };
+
   return (
     <>
       <header className={`${styles.header}`}>
@@ -28,24 +32,24 @@ export const Header = () => {
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div className={`${styles.offcanvasBody}`}>
-          <ul>
+          <ul onClick={(e) => onClick(e)}>
             <li>
-              <Link>Inicio</Link>
+              <Link to={"#heroSection"}>Inicio</Link>
             </li>
             <li>
-              <Link>Sobre Mí</Link>
+              <Link to={"#aboutMe"}>Sobre Mí</Link>
             </li>
             <li>
-              <Link>Mis Proyectos</Link>
+              <Link to={"#projects"}>Mis Proyectos</Link>
+            </li>
+            <li className="d-lg-none">
+              <Link to={"#skills"}>Mis Habilidades</Link>
             </li>
             <li>
-              <Link>Mis Habilidades</Link>
+              <Link to={"#services"}>¿Qué te ofrezco?</Link>
             </li>
             <li>
-              <Link>¿Qué te ofrezco?</Link>
-            </li>
-            <li>
-              <Link>Contáctame</Link>
+              <Link to={"#interested"}>¿Interesado?</Link>
             </li>
           </ul>
         </div>

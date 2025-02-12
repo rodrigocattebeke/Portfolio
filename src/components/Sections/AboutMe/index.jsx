@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import { SkillsCard } from "@/components/Common/SkillsCard";
 export const AboutMe = () => {
   return (
-    <section className={`${styles.sectionContainer} container-xxl section bg-2`}>
+    <section id="aboutMe" className={`${styles.sectionContainer} container-xxl section bg-2`}>
       <Title>
         <h2>Sobre Mí</h2>
       </Title>
@@ -17,7 +17,7 @@ export const AboutMe = () => {
           <div className="col-lg-4 d-none d-lg-flex justify-content-center align-items-top">
             <img src="..."></img>
           </div>
-          <div className="col-lg-4 d-none d-lg-flex flex-column align-items-center">
+          <div className={`${styles.skills} col-lg-4 d-none d-lg-flex flex-column align-items-center`}>
             <h3 className="mb-3">Mis Habilidades</h3>
             <SkillsCard />
           </div>
