@@ -7,9 +7,11 @@ import { MyProjects } from "./components/Sections/MyProjects";
 import { MySkills } from "./components/Sections/MySkills";
 import { Services } from "./components/Sections/Services";
 import { useEffect } from "react";
+import { ThemeProvider } from "./contexts/ThemeProvider";
 
 function App() {
   const location = useLocation();
+
   //Detect the hash and scrolling to the element
   useEffect(() => {
     if (!location.hash) return;
@@ -21,7 +23,9 @@ function App() {
 
   return (
     <>
-      <Header />
+      <ThemeProvider>
+        <Header />
+      </ThemeProvider>
       <HeroSection />
       <AboutMe />
       <MyProjects />

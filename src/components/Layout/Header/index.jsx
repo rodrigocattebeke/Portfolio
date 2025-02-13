@@ -1,6 +1,7 @@
 import { MenuIcon } from "@/assets/icons";
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
+import { ThemeSwitch } from "@/components/Common/ThemeSwitch";
 
 export const Header = () => {
   const onClick = (e) => {
@@ -11,12 +12,13 @@ export const Header = () => {
     <>
       <header className={`${styles.header}`}>
         <nav>
-          <div className="container-xl">
-            <div className="row p-0">
+          <div className="container-xl d-flex align-items-center h-100">
+            <div className="row p-0 w-100">
               <div className="col-9 d-flex align-items-center">
                 <h3 className={`${styles.headerTitle}`}>Rodrigo Cattebeke</h3>
               </div>
               <div className="col-3 p-0 d-flex align-items-center justify-content-end">
+                <ThemeSwitch />
                 <button type="button" className={`${styles.menuButton}`} data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                   <MenuIcon className="icon" />
                 </button>

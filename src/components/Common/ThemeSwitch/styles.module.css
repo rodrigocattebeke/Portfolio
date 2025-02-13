@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 4.3rem ;
+    height: 2.25rem;
+    padding: .27rem;
+    border-radius: 99999px;
+    transition: .5s;
+}
+
+.container.light{
+    background-color: var(--switch-color-light);
+}
+
+.container.dark{
+    background-color: var(--switch-color-dark);
+}
+
+.iconContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    transition: .7s;
+}
+
+.iconContainer.active{
+    transform: translateX(100%);
+}
+
+.iconDark , .iconLight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--switch-icon-background);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.iconDark svg , .iconLight svg{
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: var(--switch-icon-color);
+}
+
+.iconDark{
+    transform: rotateY(180deg);
+    animation: rotateLeft .5s ease-in-out;
+}
+
+.iconLight{
+    transform: rotateY(180deg);
+    animation: rotateRight .5s ease-in-out;
+}
+
+@keyframes rotateLeft {
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(-180deg);
+    }
+}
+
+@keyframes rotateRight {
+    0%{
+        z-index: 2;
+        transform: rotateY(0);
+    }
+    100%{
+        z-index: 3;
+        transform: rotateY(180deg);
+    }
+}

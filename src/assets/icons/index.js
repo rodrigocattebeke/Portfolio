@@ -7,5 +7,7 @@ import LinkedinIcon from "./linkedin.svg?react";
 import MailIcon from "./mail.svg?react";
 import PhoneIcon from "./phone.svg?react";
 import GithubIcon from "./github.svg?react";
+import DarkModeIcon from "./dark_mode.svg?react";
+import LightModeIcon from "./light_mode.svg?react";
 
-export { MenuIcon, AutorenewIcon, EngineeringIcon, ForumIcon, WebIcon, LinkedinIcon, MailIcon, PhoneIcon, GithubIcon };
+export { MenuIcon, AutorenewIcon, DarkModeIcon, EngineeringIcon, ForumIcon, WebIcon, LightModeIcon, LinkedinIcon, MailIcon, PhoneIcon, GithubIcon };

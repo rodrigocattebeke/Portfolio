@@ -57,6 +57,14 @@ h6{
     --accent-color: rgb(255,165,0);
     --accent-color-hover: rgb(227, 147, 0);
     --accent-color-25: rgb(255,165,0,0.25);
+
+    /* Theme Switch Colors */
+    --switch-color-light: rgb(244,244,244);
+    --switch-color-dark: rgb(51,51,51);
+    --switch-icon-background: rgb(255, 255, 255);
+    --switch-icon-color: rgb(51,51,51);
+
+
 }
 
 
