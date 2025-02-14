@@ -5,11 +5,14 @@
     min-height: 2.7rem;
     color: var(--primary-color);
     font-weight: bold;
-    color: var(--tertiary-color);
     background-color: var(--primary-color);
     border-radius: 6px;
     border: none;
     transition: .2s;
+}
+
+.button > *{
+    color: var(--tertiary-color);
 }
 
 .button:hover{
@@ -19,7 +22,7 @@
 
 .accentColor{
     background-color: var(--accent-color);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .accentColor:hover{

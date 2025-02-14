@@ -8,6 +8,7 @@ import { MySkills } from "./components/Sections/MySkills";
 import { Services } from "./components/Sections/Services";
 import { useEffect } from "react";
 import { ThemeProvider } from "./contexts/ThemeProvider";
+import { MobileThemeSwitch } from "./components/Common/MobileThemeSwitch";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
     <>
       <ThemeProvider>
         <Header />
+        <MobileThemeSwitch />
       </ThemeProvider>
       <HeroSection />
       <AboutMe />

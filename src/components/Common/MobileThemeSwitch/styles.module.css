@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    position: fixed;
+    width: auto;
+    right: 0;
+    bottom: 4rem;
+    transform: translateX(calc(100% - 2.5rem));
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+}
+
+.container.active{
+    transform: translateX(0)
+}
+
+.openBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .25rem;
+    border-bottom-left-radius: 5px ;
+    background-color: var(--background-color-tertiary);
+    cursor: pointer;
+}
+
+.openBtn svg{
+    width: 100%;
+    height: 100%;
+    fill: var(--primary-color);
+    transition: .5s;
+}
+
+.switchContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    max-width: 15rem;
+    height: 6rem;
+    padding: .7rem;
+    border-bottom-left-radius: 5px ;
+    background-color: var(--background-color-tertiary);
+}
+
+.switchContainer p{
+    margin: 0;
+}
