@@ -4,10 +4,11 @@
     width: auto;
     right: 0;
     bottom: 4rem;
-    transform: translateX(calc(100% - 2.5rem));
+    transform: translateX(calc(100% - 2.8rem));
     border-radius: 5px 0 0 5px;
     overflow: hidden;
     transition: .6s ease-in-out;
+    animation: entryRight 1s ease-in-out;
 }
 
 .container.active{
@@ -15,15 +16,30 @@
 }
 
 .openBtn{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.8rem;
+    height: 2.8rem;
     padding: .25rem;
     border-bottom-left-radius: 5px ;
     background-color: var(--background-color-tertiary);
     cursor: pointer;
+}
+
+.openBtn::after{
+    position: absolute;
+    content: "";
+    width: 1.5rem;
+    height: 1rem;
+    background-color: var(--background-color-tertiary);
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(0 0, 25% 30% , 50% 40% , 75% 30% , 100% 0 , 50% 100%);
+    transform: translateX(50%) translateY(55%) rotateZ(-130deg);
+
+    z-index: 4;
 }
 
 .openBtn svg{
@@ -31,6 +47,7 @@
     height: 100%;
     fill: var(--primary-color);
     transition: .5s;
+    z-index: 5;
 }
 
 .switchContainer{
@@ -38,14 +55,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: auto;
-    max-width: 15rem;
-    height: 6rem;
-    padding: .7rem;
+    width: 11rem;
+    height: auto;
+    padding: .9rem;
+    row-gap: 1rem;
     border-bottom-left-radius: 5px ;
     background-color: var(--background-color-tertiary);
 }
 
 .switchContainer p{
+    font-weight: 600;
     margin: 0;
 }
+
+
+ @keyframes entryRight {
+    0%{
+        transform: translateX(100%)
+    }
+    100%{
+        transform: translateX(calc(100% - 2.8rem));
+    }
+ }

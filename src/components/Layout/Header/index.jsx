@@ -18,7 +18,9 @@ export const Header = () => {
                 <h3 className={`${styles.headerTitle}`}>Rodrigo Cattebeke</h3>
               </div>
               <div className="col-3 p-0 d-flex align-items-center justify-content-end">
-                <ThemeSwitch />
+                <div className="d-none d-md-block">
+                  <ThemeSwitch />
+                </div>
                 <button type="button" className={`${styles.menuButton}`} data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                   <MenuIcon className="icon" />
                 </button>

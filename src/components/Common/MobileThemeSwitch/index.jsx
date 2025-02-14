@@ -10,7 +10,7 @@ export const MobileThemeSwitch = () => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className={`${styles.container} ${isActive ? styles.active : ""}`}>
+    <div className={`${styles.container} ${isActive ? styles.active : ""} d-md-none`}>
       <div className={`${styles.openBtn}`} onClick={() => setIsActive(!isActive)}>
         {theme == "light" ? <LightModeIcon /> : <DarkModeIcon />}
       </div>
