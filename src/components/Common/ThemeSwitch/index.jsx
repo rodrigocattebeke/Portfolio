@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "@/contexts/ThemeProvider";
 import { LightModeIcon } from "@/assets/icons";
 import { DarkModeIcon } from "@/assets/icons";
@@ -10,15 +10,12 @@ export const ThemeSwitch = () => {
   return (
     <div className={`${styles.container} ${theme == "light" ? styles.light : styles.dark}`}>
       <div className={`${styles.iconContainer} ${theme == "dark" ? styles.active : ""}`}>
-        {theme == "light" ? (
-          <div className={`${styles.iconLight}`} onClick={setDark}>
-            <LightModeIcon />
-          </div>
-        ) : (
-          <div className={`${styles.iconDark}`} onClick={setLight}>
-            <DarkModeIcon />
-          </div>
-        )}
+        <div className={`${styles.iconLight} ${theme == "light" ? styles.active : ""}`} onClick={setDark}>
+          <LightModeIcon />
+        </div>
+        <div className={`${styles.iconDark} ${theme == "dark" ? styles.active : ""}`} onClick={setLight}>
+          <DarkModeIcon />
+        </div>
       </div>
     </div>
   );

@@ -32,7 +32,7 @@
 }
 
 .iconDark , .iconLight{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -41,6 +41,10 @@
     background-color: var(--switch-icon-background);
     cursor: pointer;
     z-index: 2;
+}
+
+.iconDark.active , .iconLight.active{
+    display: flex;
 }
 
 .iconDark svg , .iconLight svg{
