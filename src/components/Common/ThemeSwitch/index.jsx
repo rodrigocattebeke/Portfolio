@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "@/contexts/ThemeProvider";
 import { LightModeIcon } from "@/assets/icons";
 import { DarkModeIcon } from "@/assets/icons";

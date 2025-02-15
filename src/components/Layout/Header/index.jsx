@@ -2,11 +2,11 @@ import { MenuIcon } from "@/assets/icons";
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import { ThemeSwitch } from "@/components/Common/ThemeSwitch";
-import { CloseIcon } from "../../../assets/icons";
+import { CloseIcon } from "@/assets/icons";
 
 export const Header = () => {
   const onClick = (e) => {
-    e.target.closest(".offcanvas").querySelector(".btn-close").click();
+    e.target.closest(".offcanvas").querySelector(".button-close").click();
   };
 
   return (
@@ -34,7 +34,9 @@ export const Header = () => {
       {/* Offcanvas */}
       <div className={`${styles.offcanvas} offcanvas offcanvas-start`} data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div className="offcanvas-header">
-          <CloseIcon className={`${styles.closeIcon} btn-close icon`} data-bs-dismiss="offcanvas" aria-label="Close" />
+          <button className={`${styles.btnClose} button-close`} data-bs-dismiss="offcanvas" aria-label="Close">
+            <CloseIcon className={`${styles.closeIcon} icon`} />
+          </button>
         </div>
         <div className={`${styles.offcanvasBody}`}>
           <ul onClick={(e) => onClick(e)}>

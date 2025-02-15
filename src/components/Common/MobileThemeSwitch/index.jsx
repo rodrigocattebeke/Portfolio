@@ -13,7 +13,6 @@ export const MobileThemeSwitch = () => {
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if ((containerRef && e.target == containerRef.current) || !containerRef.current.contains(e.target)) setIsActive(false);
-      console.log(e.target, e.target.closest(`.${styles.container}`));
     };
 
     document.addEventListener("click", handleOutsideClick);
