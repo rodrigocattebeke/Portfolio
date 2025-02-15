@@ -2,6 +2,7 @@ import { MenuIcon } from "@/assets/icons";
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import { ThemeSwitch } from "@/components/Common/ThemeSwitch";
+import { CloseIcon } from "../../../assets/icons";
 
 export const Header = () => {
   const onClick = (e) => {
@@ -33,7 +34,7 @@ export const Header = () => {
       {/* Offcanvas */}
       <div className={`${styles.offcanvas} offcanvas offcanvas-start`} data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div className="offcanvas-header">
-          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <CloseIcon className={`${styles.closeIcon} btn-close icon`} data-bs-dismiss="offcanvas" aria-label="Close" />
         </div>
         <div className={`${styles.offcanvasBody}`}>
           <ul onClick={(e) => onClick(e)}>

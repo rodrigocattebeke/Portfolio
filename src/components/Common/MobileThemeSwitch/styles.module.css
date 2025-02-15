@@ -9,6 +9,7 @@
     overflow: hidden;
     transition: .6s ease-in-out;
     animation: entryRight 1s ease-in-out;
+    z-index: 99;
 }
 
 .container.active{

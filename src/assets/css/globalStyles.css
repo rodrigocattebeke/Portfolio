@@ -93,13 +93,13 @@ h6{
 
 
     /*SHADOW COLOR*/
-    --shadow-color: rgb(233, 233, 233 , .25);
+    --shadow-color: rgb(233, 233, 233 , .50);
 
 }
 
 
 /*           */
-p,span,a,h1,h2,h3,h4,h5,h6{
+p,span,small,a,h1,h2,h3,h4,h5,h6{
     color: var(--primary-color);
     transition: .5s;
 }
@@ -118,6 +118,7 @@ p,span,a,h1,h2,h3,h4,h5,h6{
     width:2.5rem ;
     height: 2.5rem;
     fill: var(--primary-color);
+    transition: .5s;
 }
 
 .section{

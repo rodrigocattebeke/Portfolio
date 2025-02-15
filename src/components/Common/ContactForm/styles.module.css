@@ -11,25 +11,28 @@
     padding: 1.5rem 1rem;
     background-color: var(--tertiary-color-75);
     box-shadow: .1rem .2rem .4rem rgba(0, 0, 0, 0.05);
+    transition: .5s;
 }
 
 
 .form input{
     width: 100%;
     padding: .2rem ;
+    color: var(--primary-color);
+    background-color: transparent;
     border: none;
     border-bottom: 2px solid var(--secondary-color-75);
-    background-color: transparent;
-    transition: box-shadow .6s;
+    transition: .5s;
 }
 
 
 .form textarea{
     padding: .5rem;
+    color: var(--primary-color);
     background-color: transparent;
     border: 2px solid var(--secondary-color-75);
     border-radius: 3px;
-    transition: box-shadow .6s;
+    transition: .5s;
 }
 
 .form input:focus , .form textarea:focus{

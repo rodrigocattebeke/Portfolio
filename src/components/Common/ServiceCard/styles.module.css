@@ -13,7 +13,7 @@
     box-shadow: var(--shadow-color) 0 0 15px;
     background-color: var(--background-color-primary);
     transform: translateX(-100vw);
-    transition: transform 1.5s ease-in-out;
+    transition: background-color .5s, transform 1.5s ease-in-out;
 }
 
 .card.isVisible{
