@@ -9,6 +9,7 @@ import { Services } from "./components/Sections/Services";
 import { useEffect } from "react";
 import { ThemeProvider } from "./contexts/ThemeProvider";
 import { MobileThemeSwitch } from "./components/Common/MobileThemeSwitch";
+import { LanguageProvider } from "./contexts/LanguageProvider";
 
 function App() {
   const location = useLocation();
@@ -24,16 +25,18 @@ function App() {
 
   return (
     <>
-      <ThemeProvider>
-        <Header />
-        <MobileThemeSwitch />
-      </ThemeProvider>
-      <HeroSection />
-      <AboutMe />
-      <MyProjects />
-      <MySkills />
-      <Services />
-      <Interested />
+      <LanguageProvider>
+        <ThemeProvider>
+          <Header />
+          <MobileThemeSwitch />
+        </ThemeProvider>
+        <HeroSection />
+        <AboutMe />
+        <MyProjects />
+        <MySkills />
+        <Services />
+        <Interested />
+      </LanguageProvider>
     </>
   );
 }

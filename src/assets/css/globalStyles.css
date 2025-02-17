@@ -81,8 +81,8 @@ h6{
     --primary-color: rgb(233, 233, 233);
     --primary-color-hover: rgb(171, 171, 171);
     --primary-color-75: rgba(233, 233, 233 , 0.75);
-    --secondary-color: rgb(112,112,112);
-    --secondary-color-75: rgba(112,112,112,0.75);
+    --secondary-color: rgb(132, 132, 132);
+    --secondary-color-75: rgba(132, 132, 132, 0.75);
     --tertiary-color: rgb(88, 88, 88);
     --tertiary-color-75: rgba(88, 88, 88,0.75);
 
@@ -91,6 +91,10 @@ h6{
     --background-color-secondary: rgb(62, 62, 62);
     --background-color-tertiary: rgb(88, 88, 88);
 
+     /* Accent color */
+     --accent-color: rgb(245, 159, 0);
+     --accent-color-hover: rgb(227, 147, 0);
+     --accent-color-25: rgb(255,165,0,0.25);
 
     /*SHADOW COLOR*/
     --shadow-color: rgb(233, 233, 233 , .50);

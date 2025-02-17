@@ -22,11 +22,13 @@
 
 .accentColor{
     background-color: var(--accent-color);
+}
+
+.accentColor > *{
     color: var(--primary-color);
 }
 
 .accentColor:hover{
-    color: var(--primary-color);
     transform:scale(.97);
     background-color: var(--accent-color-hover);
 }

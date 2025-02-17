@@ -1,6 +1,7 @@
 import { Title } from "@/components/Common/Title";
 import styles from "./styles.module.css";
 import { SkillsCard } from "@/components/Common/SkillsCard";
+import { AvatarImg } from "@/assets/img";
 export const AboutMe = () => {
   return (
     <section id="aboutMe" className={`${styles.sectionContainer} container-xxl section bg-2`}>
@@ -15,7 +16,7 @@ export const AboutMe = () => {
             <p>Me especializo en React, y tengo conocimientos en Bootstrap para diseñar interfaces modernas y responsivas. Además, me esfuerzo por mantener una comunicación clara y efectiva con clientes, buscando siempre entregar un trabajo de calidad.</p>
           </div>
           <div className="col-lg-4 d-none d-lg-flex justify-content-center align-items-top">
-            <img src="..."></img>
+            <img src={AvatarImg} className={`${styles.personImg}`}></img>
           </div>
           <div className={`${styles.skills} col-lg-4 d-none d-lg-flex flex-column align-items-center`}>
             <h3 className="mb-3">Mis Habilidades</h3>

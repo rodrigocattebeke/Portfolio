@@ -10,5 +10,6 @@ import GithubIcon from "./github.svg?react";
 import DarkModeIcon from "./dark_mode.svg?react";
 import LightModeIcon from "./light_mode.svg?react";
 import CloseIcon from "./close.svg?react";
+import LanguageIcon from "./language.svg?react";
 
-export { CloseIcon, MenuIcon, AutorenewIcon, DarkModeIcon, EngineeringIcon, ForumIcon, WebIcon, LightModeIcon, LinkedinIcon, MailIcon, PhoneIcon, GithubIcon };
+export { CloseIcon, MenuIcon, AutorenewIcon, DarkModeIcon, EngineeringIcon, ForumIcon, LanguageIcon, WebIcon, LightModeIcon, LinkedinIcon, MailIcon, PhoneIcon, GithubIcon };

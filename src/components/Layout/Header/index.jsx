@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import { ThemeSwitch } from "@/components/Common/ThemeSwitch";
 import { CloseIcon } from "@/assets/icons";
+import { LanguageSwitch } from "@/components/Common/LanguageSwitch";
 
 export const Header = () => {
   const onClick = (e) => {
@@ -18,7 +19,10 @@ export const Header = () => {
               <div className="col-9 d-flex align-items-center">
                 <h3 className={`${styles.headerTitle}`}>Rodrigo Cattebeke</h3>
               </div>
-              <div className="col-3 p-0 d-flex align-items-center justify-content-end">
+              <div className="col-3 p-0 d-flex gap-2 align-items-center justify-content-end">
+                <div>
+                  <LanguageSwitch />
+                </div>
                 <div className="d-none d-md-block">
                   <ThemeSwitch />
                 </div>

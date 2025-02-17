@@ -28,7 +28,9 @@ export const HeroSection = () => {
         </div>
         <div className={`${styles.contactButton + " " + addClass}`}>
           <Link to={"#contactForm"}>
-            <Button accentColor={"true"}>¡Contáctame!</Button>
+            <Button accentColor={"true"}>
+              <span style={{ fontWeight: "bold" }}>¡Contáctame!</span>
+            </Button>
           </Link>
         </div>
       </div>

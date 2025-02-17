@@ -1,0 +1,49 @@
+.iconContainer{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.iconContainer > svg{
+    width: 100%;
+    height: 100%;
+}
+
+.selectContainer{
+    display: flex;
+    align-items: center;
+    padding: 0 .1rem;
+}
+
+.selectContainer > select{
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: color .5s;
+}
+
+.selectContainer > select > option{
+    color: var(--primary-color);
+    background-color: var(--background-color-primary);
+    border: none;
+}
+
+.selectContainer > select:focus{
+    outline: none;
+}
+
+
+.switchContainer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: auto ;
+    height: 2.25rem;
+    padding: .27rem;
+    border-radius: 99999px;
+    background-color: var(--background-color-primary);
+    transition: .5s;
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+

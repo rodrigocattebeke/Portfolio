@@ -1,3 +1,10 @@
+.personImg{
+    width: 100%;
+    height: min-content;
+    object-fit: contain;
+    background-color: var(--tertiary-color-75);
+}
+
 .sectionContainer{
     display: flex;
     flex-direction: column;

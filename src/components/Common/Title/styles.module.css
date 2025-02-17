@@ -1,18 +1,26 @@
 .titleContainer{
     display: flex;
+    position: relative;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     width: auto;
     height: auto;
-    min-height: 2.875rem;
-    border-top:1px solid var(--accent-color);
-    border-bottom:1px solid var(--accent-color);
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
+.titleContainer::after{
+    position: absolute;
+    content: "";
+    width: 5rem;
+    height: 1.3px;
+    bottom: 0;
+    background-color: var(--accent-color);
+}
+
 .titleContainer > *{
-    margin: 0;
-    word-break:keep-all
+    margin: 0 0 .6rem 0;
+    word-break: keep-all;
 }
 
