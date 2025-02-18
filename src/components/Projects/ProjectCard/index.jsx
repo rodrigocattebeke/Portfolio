@@ -1,48 +1,43 @@
 import { Carousel } from "@/components/Common/Carousel";
-import { MobileMockup, TabletMockup, DesktopMockup } from "@/assets/img";
 import styles from "./styles.module.css";
 import { Button } from "../../Common/Button";
-import { Link } from "react-router-dom";
 
-export const ProjectCard = () => {
+export const ProjectCard = ({ projectInformation }) => {
   return (
     <div className="container mb-4">
       <div className={`${styles.cardContainer} row`}>
+        {/* Project images carousel */}
         <div className={`d-flex align-items-center justify-content-center col-12 col-lg-6`}>
-          <Carousel
-            imgArray={[
-              { img: DesktopMockup, name: "Site Desktop Mockup" },
-              { img: MobileMockup, name: "Site Mobile Mockup" },
-              { img: TabletMockup, name: "Site Tablet Mockup" },
-            ]}
-          />
+          <Carousel imgArray={projectInformation.images} />
         </div>
+
+        {/* Project information */}
         <div className="col-12 col-lg-6">
           <div className={`${styles.cardBody}`}>
-            <h2>LyR Express</h2>
+            <h2>{projectInformation.title}</h2>
             <div className={`${styles.cardDescription}`}>
-              <p>LyR Express es un ecommerce completo, con carrito de compras y un flujo de checkout intuitivo, todo construido con React y Bootstrap.</p>
+              <p>{projectInformation.description}</p>
               <ul>
                 <li>
-                  <span>Tipo:</span> Ecomerce
+                  <span>{projectInformation.type.title + ":"}</span> {projectInformation.type.description + "."}
                 </li>
                 <li>
-                  <span>Tecnologías:</span> React, JavaScript, Bootstrap, CSS.{" "}
+                  <span>{projectInformation.technologies.title + ":"}</span> {projectInformation.technologies.description.join(", ") + "."}
                 </li>
               </ul>
             </div>
           </div>
+
+          {/* Actions buttons */}
           <div className={`${styles.cardButtons}`}>
-            <Link to={"#verproyecto"}>
+            <a href={`${projectInformation.links.website.url}`} target="_blank" rel="noopener noreferrer">
               <Button>
-                <span style={{ fontWeight: "bold" }}>Ver Proyecto</span>
+                <span style={{ fontWeight: "bold" }}>{projectInformation.links.website.title}</span>
               </Button>
-            </Link>
-            <Link to={"#masinformacion"}>
-              <Button>
-                <span style={{ fontWeight: "bold" }}>Más Inforación</span>
-              </Button>
-            </Link>
+            </a>
+            <Button>
+              <span style={{ fontWeight: "bold" }}>{projectInformation.links.details.title}</span>
+            </Button>
           </div>
         </div>
       </div>

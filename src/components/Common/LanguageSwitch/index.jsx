@@ -4,13 +4,18 @@ import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../../../contexts/LanguageProvider";
 
 export const LanguageSwitch = () => {
-  const { availableLanguages } = useContext(LanguageContext);
-  const [languages, setLanguages] = useState(null);
+  const { availableLanguages, selectLanguage } = useContext(LanguageContext);
+  const languages = availableLanguages();
+  const [langSelected, setLangSelected] = useState(null);
+
+  const handleSelectChange = (e) => {
+    setLangSelected(e.target.value);
+  };
 
   useEffect(() => {
-    let languages = availableLanguages();
-    setLanguages(languages);
-  }, [availableLanguages]);
+    if (!langSelected) return;
+    selectLanguage(langSelected);
+  }, [selectLanguage, langSelected]);
 
   return languages ? (
     <div className={`${styles.switchContainer}`}>
@@ -18,7 +23,7 @@ export const LanguageSwitch = () => {
         <LanguageIcon className="icon" />
       </div>
       <div className={`${styles.selectContainer}`}>
-        <select>
+        <select value={langSelected} onChange={handleSelectChange}>
           {languages.map((lang, i) => (
             <option value={`${lang.value}`} key={i}>
               {lang.name}

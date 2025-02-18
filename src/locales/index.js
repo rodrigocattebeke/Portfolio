@@ -1,3 +1,6 @@
+import es from "./es.json";
+import en from "./en.json";
+
 const languages = {
   availables: [
     { name: "Español", value: "es" },
@@ -5,11 +8,13 @@ const languages = {
   ],
   es: {
     name: "Español",
-    translations: "es.json",
+    value: "es",
+    translations: es,
   },
   en: {
     name: "English",
-    translations: "en.json",
+    value: "en",
+    translations: en,
   },
 };
 

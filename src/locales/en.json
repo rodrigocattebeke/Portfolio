@@ -1,0 +1,123 @@
+{
+    "heroSection":{
+        "greeting": "Hello, i am",
+        "name": "Rodrigo Cattebeke",
+        "rol": "Frontend Developer",
+        "buttonText": "Contact Me"
+    },
+    "aboutMe": {
+        "title": "About Me",
+        "bodyParagraphs": ["Hello, I am Rodrigo Cattebeke, a frontend developer from Paraguay with a great passion for creating web solutions.",
+        "Although I am still in the learning process, I have worked on personal projects, highlighting an ecommerce made in React. This project has allowed me to apply my knowledge in technologies such as JavaScript, CSS, HTML, and React, covering key functionalities of a real ecommerce, such as product management and purchasing flow.","I specialize in React, and i have knowledge of Bootstrap to design modern and responsive interfaces. Additionally, I strive to maintain clear and effective communication with clients, always seeking to deliver quality work."]
+    },
+    "myProjects":{
+        "title": "My Projects",
+        "projects": [
+            {
+                "title": "LyR Express",
+                "description": "LyR Express is a complete ecommerce, with a shopping cart and an intuitive checkout flow, all built with React and Bootstrap.",
+                "type": {
+                    "title": "Type",
+                    "description":"Ecomerce"
+                },
+                "technologies": {
+                    "title": "Technologies",
+                    "description": ["React", "JavaScript", "Bootstrap", "CSS"]
+                },
+                "images": [
+                    { 
+                        "img": "/src/assets/img/mockups/lyrexpress/desktop.png", "name": "Site Desktop Mockup" 
+                    },{ 
+                        "img": "/src/assets/img/mockups/lyrexpress/mobile.png", 
+                        "name": "Site Mobile Mockup" 
+                    },{ 
+                        "img": "/src/assets/img/mockups/lyrexpress/tablet.png", 
+                        "name": "Site Tablet Mockup" 
+                    }
+                ],
+                "links": {
+                    "website": {
+                        "title": "View Project",
+                        "url": "https://lyrexpress.netlify.app"
+                    },
+                    "details":{
+                        "title": "More Information"
+                    }
+                },
+                "moreInformation": {
+                    "title":"LyR Express",
+                    "description": "LyR Express is a complete ecommerce, with a shopping cart and an intuitive checkout flow, all built with React and Bootstrap.",
+                    "Y asi con todas, tengo que ir agregando e a poco": ""
+                }
+            }
+        ]
+    },
+    "mySkills":{
+        "title": "My Skills",
+        "skills":[
+            { 
+                "skill": "React",
+                "percentage":45
+            },
+            {
+                "skill": "JavaScript",
+                "percentage": 60
+            },
+            {
+                "skill": "CSS",
+                "percentage": 60
+            }
+        ]
+    },
+    "services":{
+        "title": "What do I offer you?",
+        "servicesCards": [
+            {
+                "icon": "EngineeringIcon",
+                "title": "Custom Project Development",
+                "description": "I create custom solutions that fit each client's needs, from functional e-commerce to modern, interactive interfaces."
+            },{
+                "icon": "WebIcon",
+                "title": "Responsive Frontend Development",
+                "description": "I build custom solutions, such as dynamic web applications and functional e-commerce. Initial design in tools such as Figma for prototypes and wireframes."
+            },{
+                "icon": "AutorenewIcon",
+                "title": "Site Maintenance and Updating",
+                "description": "I offer support and updates to keep your website secure, optimized and running smoothly."
+            },{
+                "icon": "ForumIcon",
+                "title": "Collaboration and Effective Comunication",
+                "description": "I maintain open and constant communication with my clients, ensuring that the result meets their expectations."
+            }
+        ]
+    }       ,
+    "interested":{
+        "title": "Interested?",
+        "cardInformation":{
+            "img": "..",
+            "title": "Rodrigo Cattebeke",
+            "description": "Frontend Developer",
+            "icons":[
+                {
+                    "icon":"LinkedinIcon",
+                    "url": "..."            
+                },{
+                    "icon":"GithubIcon",
+                    "url": "..."            
+                },{
+                    "icon":"MailIcon",
+                    "url": "..."            
+                },{
+                    "icon":"PhoneIcon",
+                    "url": "..."            
+                }
+            ]
+        },
+        "formTexts":{
+            "name": "Name",
+            "email": "Email",
+            "textarea": "Write your message",
+            "submitButton": "Send Message"
+        }
+    }
+}

@@ -4,7 +4,7 @@ import { languages } from "@/locales";
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("es");
+  const [languageSelected, setLanguageSelected] = useState(languages.es); //"es" is the default language selected
 
   const availableLanguages = () => {
     return languages.availables;
@@ -25,7 +25,18 @@ export const LanguageProvider = ({ children }) => {
     if (isLangAvailable(lang)) {
       let langSelected = languages[`${lang}`];
       localStorage.setItem("language", lang);
-      return setLanguage(langSelected);
+      document.body.classList.add("fadeText"); //The first fade duration is .5s
+
+      setTimeout(() => {
+        setLanguageSelected(langSelected); //when the text is not visible, change the text to the language selected
+      }, 500);
+
+      //remove fade class for next using
+      setTimeout(() => {
+        document.body.classList.remove("fadeText");
+      }, 1000); //The delay has to be the same as the total duration of the fadeText
+
+      return;
     } else {
       return console.error(`Language "${lang}" is not available.`);
     }
@@ -37,7 +48,7 @@ export const LanguageProvider = ({ children }) => {
     if (savedLanguage) selectLanguage(savedLanguage);
   });
 
-  return <LanguageContext.Provider value={{ availableLanguages, isLangAvailable, language, selectLanguage }}>{children}</LanguageContext.Provider>;
+  return <LanguageContext.Provider value={{ availableLanguages, isLangAvailable, selectLanguage, languageSelected }}>{children}</LanguageContext.Provider>;
 };
 
 export { LanguageContext };

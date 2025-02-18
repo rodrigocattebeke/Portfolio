@@ -22,11 +22,7 @@
 }
 
 .contactButton{
-    animation: fallElement 5s cubic-bezier(.8, .1, .15, 1); 
-}
-
-.contactButton.active{
-    animation: scale 2.3s ease-in-out infinite;
+    animation: fallElement 5s cubic-bezier(.8, .1, .15, 1), scale 2.3s ease-in-out infinite 5s; 
 }
 
 .heroContainer{

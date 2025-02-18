@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useElementObserver } from "../../../Helpers/useElementObserver";
 import styles from "./styles.module.css";
 

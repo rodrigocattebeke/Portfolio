@@ -1,0 +1,123 @@
+{
+        "heroSection":{
+            "greeting": "Hola, soy",
+            "name": "Rodrigo Cattebeke",
+            "rol": "Desarrollador Frontend",
+            "buttonText": "Contáctame"
+        },
+        "aboutMe": {
+            "title": "Sobre Mí",
+            "bodyParagraphs": ["Hola, soy Rodrigo Cattebeke, un desarrollador front-end de Paraguay con una gran pasión por la creación de soluciones web.",
+            "Aunque aún me encuentro en proceso de aprendizaje, he trabajado en proyectos personales, destacando un ecommerce realizado en React. Este proyecto me ha permitido aplicar mis conocimientos en tecnologías como JavaScript, CSS, HTML, y React, abarcando funcionalidades clave de un ecommerce real, como el manejo de productos y el flujo de compras.","Me especializo en React, y tengo conocimientos en Bootstrap para diseñar interfaces modernas y responsivas. Además, me esfuerzo por mantener una comunicación clara y efectiva con clientes, buscando siempre entregar un trabajo de calidad."]
+        },
+        "myProjects":{
+            "title": "Mis Proyectos",
+            "projects": [
+                {
+                    "title": "LyR Express",
+                    "description": "LyR Express es un ecommerce completo, con carrito de compras y un flujo de checkout intuitivo, todo construido con React y Bootstrap.",
+                    "type": {
+                        "title": "Tipo",
+                        "description":"Ecomerce"
+                    },
+                    "technologies": {
+                        "title": "Tecnologías",
+                        "description": ["React", "JavaScript", "Bootstrap", "CSS"]
+                    },
+                    "images": [
+                        { 
+                            "img": "/src/assets/img/mockups/lyrexpress/desktop.png", "name": "Site Desktop Mockup" 
+                        },{ 
+                            "img": "/src/assets/img/mockups/lyrexpress/mobile.png", 
+                            "name": "Site Mobile Mockup" 
+                        },{ 
+                            "img": "/src/assets/img/mockups/lyrexpress/tablet.png", 
+                            "name": "Site Tablet Mockup" 
+                        }
+                    ],
+                    "links": {
+                        "website": {
+                            "title": "Ver Proyecto",
+                            "url": "https://lyrexpress.netlify.app"
+                        },
+                        "details":{
+                            "title": "Más Información"
+                        }
+                    },
+                    "moreInformation": {
+                        "title":"LyR Express",
+                        "description": "LyR Express es un ecommerce completo, con carrito de compras y un flujo de checkout intuitivo, todo construido con React y Bootstrap.",
+                        "Y asi con todas, tengo que ir agregando e a poco": ""
+                    }
+                }
+            ]
+        },
+        "mySkills":{
+            "title": "Mis Habilidades",
+            "skills":[
+                { 
+                    "skill": "React",
+                    "percentage":45
+                },
+                {
+                    "skill": "JavaScript",
+                    "percentage": 60
+                },
+                {
+                    "skill": "CSS",
+                    "percentage": 60
+                }
+            ]
+        },
+        "services":{
+            "title": "¿Qué te ofrezco?",
+            "servicesCards": [
+                {
+                    "icon": "EngineeringIcon",
+                    "title": "Desarrollo de Proyectos Personalizados",
+                    "description": "Creo soluciones a medida que se adaptan a las necesidades de cada cliente, desde e-commerce funcionales hasta interfaces interactivas y modernas."
+                },{
+                    "icon": "WebIcon",
+                    "title": "Desarrollo Frontend Responsivo",
+                    "description": "Construyo soluciones hechas a medida, como aplicaciones web dinámicas y e-commerce funcionales. Diseño inicial en herramientas como Figma para prototipos y wireframes."
+                },{
+                    "icon": "AutorenewIcon",
+                    "title": "Mantenimiento y Actualización de Sitios",
+                    "description": "Ofrezco soporte y actualizaciones para mantener tu sitio web seguro, optimizado y en funcionamiento sin problemas. (Icono recomendado: update o support."
+                },{
+                    "icon": "ForumIcon",
+                    "title": "Colaboración y Comunicación Efectiva",
+                    "description": "Mantengo una comunicación abierta y constante con mis clientes, asegurando que el resultado cumpla con sus expectativas."
+                }
+            ]
+        }       ,
+        "interested":{
+            "title": "¿Interesado?",
+            "cardInformation":{
+                "img": "..",
+                "title": "Rodrigo Cattebeke",
+                "description": "Desarrollador Frontend",
+                "icons":[
+                    {
+                        "icon":"LinkedinIcon",
+                        "url": "..."            
+                    },{
+                        "icon":"GithubIcon",
+                        "url": "..."            
+                    },{
+                        "icon":"MailIcon",
+                        "url": "..."            
+                    },{
+                        "icon":"PhoneIcon",
+                        "url": "..."            
+                    }
+                ]
+            },
+            "formTexts":{
+                "name": "Nombre",
+                "email": "Email",
+                "textarea": "Escribe un mensaje",
+                "submitButton": "Enviar mensaje"
+            }
+        }
+    }
