@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 import { ThemeSwitch } from "@/components/Common/ThemeSwitch";
 import { CloseIcon } from "@/assets/icons";
 import { LanguageSwitch } from "@/components/Common/LanguageSwitch";
+import { useContext } from "react";
+import { LanguageContext } from "@/contexts/LanguageProvider";
 
 export const Header = () => {
+  const { languageSelected } = useContext(LanguageContext);
+
   const onClick = (e) => {
     e.target.closest(".offcanvas").querySelector(".button-close").click();
   };
@@ -44,24 +48,11 @@ export const Header = () => {
         </div>
         <div className={`${styles.offcanvasBody}`}>
           <ul onClick={(e) => onClick(e)}>
-            <li>
-              <Link to={"#heroSection"}>Inicio</Link>
-            </li>
-            <li>
-              <Link to={"#aboutMe"}>Sobre Mí</Link>
-            </li>
-            <li>
-              <Link to={"#projects"}>Mis Proyectos</Link>
-            </li>
-            <li className="d-lg-none">
-              <Link to={"#skills"}>Mis Habilidades</Link>
-            </li>
-            <li>
-              <Link to={"#services"}>¿Qué te ofrezco?</Link>
-            </li>
-            <li>
-              <Link to={"#interested"}>¿Interesado?</Link>
-            </li>
+            {languageSelected.translations.menuSections.map((section, i) => (
+              <li className={`${section.url == "#skills" ? "d-lg-none" : ""}`} key={i}>
+                <Link to={`${section.url}`}>{section.title}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

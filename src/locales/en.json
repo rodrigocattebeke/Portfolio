@@ -1,4 +1,23 @@
 {
+    "menuSections": [{
+        "title": "Home",
+        "url": "#heroSection"
+        },{
+        "title": "About Me",
+        "url": "#aboutMe"
+        },{
+        "title": "My Projects",
+        "url": "#projects"   
+        },{
+        "title": "My Skills",
+        "url": "#skills"
+        },{
+        "title": "What do I offer you?",
+        "url": "#services"
+        },{
+        "title": "Interested?",
+        "url": "#interested"
+        }],
     "heroSection":{
         "greeting": "Hello, i am",
         "name": "Rodrigo Cattebeke",

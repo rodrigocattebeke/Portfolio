@@ -1,4 +1,23 @@
 {
+        "menuSections": [{
+        "title": "Inicio",
+        "url": "#heroSection"
+        },{
+        "title": "Sobre Mí",
+        "url": "#aboutMe"
+        },{
+        "title": "Mis Proyectos",
+        "url": "#projects"   
+        },{
+        "title": "Mis Habilidades",
+        "url": "#skills"
+        },{
+        "title": "¿Qué te ofrezco?",
+        "url": "#services"
+        },{
+        "title": "¿Interesado?",
+        "url": "#interested"
+        }],
         "heroSection":{
             "greeting": "Hola, soy",
             "name": "Rodrigo Cattebeke",

@@ -22,9 +22,7 @@ function App() {
       element.scrollIntoView({ behavior: "smooth" });
     }
   }, [location.hash]);
-  // import { useContext } from "react";
-  // import { LanguageContext } from "@/contexts/LanguageProvider";
-  // const { languageSelected } = useContext(LanguageContext);
+
   return (
     <>
       <LanguageProvider>
