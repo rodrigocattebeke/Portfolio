@@ -2,7 +2,7 @@ import { Carousel } from "@/components/Common/Carousel";
 import styles from "./styles.module.css";
 import { Button } from "../../Common/Button";
 
-export const ProjectCard = ({ projectInformation }) => {
+export const ProjectCard = ({ projectInformation, openModal }) => {
   return (
     <div className="container mb-4">
       <div className={`${styles.cardContainer} row`}>
@@ -35,7 +35,7 @@ export const ProjectCard = ({ projectInformation }) => {
                 <span style={{ fontWeight: "bold" }}>{projectInformation.links.website.title}</span>
               </Button>
             </a>
-            <Button>
+            <Button onClick={() => openModal(projectInformation)}>
               <span style={{ fontWeight: "bold" }}>{projectInformation.links.details.title}</span>
             </Button>
           </div>

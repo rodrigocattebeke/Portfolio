@@ -65,8 +65,24 @@
                     },
                     "moreInformation": {
                         "title":"LyR Express",
-                        "description": "LyR Express es un ecommerce completo, con carrito de compras y un flujo de checkout intuitivo, todo construido con React y Bootstrap.",
-                        "Y asi con todas, tengo que ir agregando e a poco": ""
+                        "description": ["LyR Express es un ecommerce completamente funcional desarrollado en React. La plataforma incluye todas las características esenciales para una tienda en línea, como un carrito de compras interactivo, gestión de productos, y un flujo de checkout optimizado." , "Utilizando componentes de Bootstrap, se ha asegurado una experiencia de usuario intuitiva y responsiva en todos los dispositivos."],
+                        "collapsableDescriptions": [
+                            {
+                                "title": "Características clave",
+                                "description": ["Interfaz responsiva: Diseño optimizado para dispositivos móviles y escritorio." , "Gestión de pedidos: Los usuarios pueden realizar seguimiento de sus compras.","Proceso de compra simplificado: Flujo de checkout sencillo con pasos claros, con opción para guardar direcciones de envío  para futuras compras."], 
+                                "isList": true
+                            },
+                            {
+                                "title":"Tecnologías usadas",
+                                "description": ["React" , "JavaScript" , "Bootstrap" , "CSS"],
+                                "isList": true
+                            },
+                            {
+                                "title": "Proceso de desarrollo",
+                                "description": ["El proceso de desarrollo comenzó con la planificación de las funcionalidades clave y las páginas necesarias para el proyecto, asegurando que todos los componentes esenciales estuvieran cubiertos. Sin embargo, uno de los errores más grandes fue no haber realizado los bocetos ni los diseños previos en Figma antes de empezar a codificar." , "En lugar de eso, fui agregando los diseños y la estructura de la interfaz de usuario de forma gradual durante el desarrollo. Aunque esto permitió avanzar rápidamente, aprendí que es crucial contar con una planificación visual detallada y un diseño previo antes de comenzar la implementación." , "Esta experiencia me ha enseñado la importancia de dedicar tiempo a la fase de diseño, y lo aplicaré en mis futuros proyectos."],
+                                "isList": false
+                            }
+                        ]
                     }
                 }
             ]
