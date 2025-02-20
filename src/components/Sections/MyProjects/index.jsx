@@ -2,7 +2,7 @@ import { Title } from "@/components/Common/Title";
 import { ProjectCard } from "@/components/Projects/ProjectCard";
 import { LanguageContext } from "@/contexts/LanguageProvider";
 import { useContext, useState } from "react";
-import { ProjectInformationModal } from "./ProjectInformationModal";
+import { ProjectInformationModal } from "@/components/Projects/ProjectInformationModal";
 
 export const MyProjects = () => {
   const { languageSelected } = useContext(LanguageContext);

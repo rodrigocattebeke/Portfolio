@@ -26,19 +26,17 @@ export const ProjectInformationModal = ({ projectInformation = null, isActive, c
 
   return projectInformation ? (
     <div className={`${styles.container} ${backgroundIsActive ? styles.active : ""}`}>
-      <div className={`${styles.modalContainer} ${modalIsActive ? styles.active : ""}`}>
-        <div className={`${styles.modal}`}>
-          {/* Close Modal Button */}
-          <div className={`${styles.closeContainer}`}>
-            <div onClick={closeModal}>
-              <CloseIcon className="icon" />
-            </div>
-          </div>
+      <div className={`${styles.modal} ${modalIsActive ? styles.active : ""}`}>
+        {/* Close Modal Button */}
+        <div className={`${styles.closeContainer}`} onClick={closeModal}>
+          <CloseIcon className="icon" />
+        </div>
 
+        <div className={`${styles.modalBody}`}>
           <div className={`${styles.modalTitle}`}>
             <h3>{projectInformation.title}</h3>
           </div>
-          <div className={`${styles.modalBody}`}>
+          <div>
             {/* Project Description */}
             {projectInformation.moreInformation.description.map((desc, i) => (
               <p key={i}>{desc}</p>

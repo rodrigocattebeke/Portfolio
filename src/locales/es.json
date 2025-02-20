@@ -45,12 +45,12 @@
                     },
                     "images": [
                         { 
-                            "img": "/src/assets/img/mockups/lyrexpress/desktop.png", "name": "Site Desktop Mockup" 
+                            "img": "DesktopMockup", "name": "Site Desktop Mockup" 
                         },{ 
-                            "img": "/src/assets/img/mockups/lyrexpress/mobile.png", 
+                            "img": "MobileMockup", 
                             "name": "Site Mobile Mockup" 
                         },{ 
-                            "img": "/src/assets/img/mockups/lyrexpress/tablet.png", 
+                            "img": "TabletMockup", 
                             "name": "Site Tablet Mockup" 
                         }
                     ],
@@ -58,6 +58,10 @@
                         "website": {
                             "title": "Ver Proyecto",
                             "url": "https://lyrexpress.netlify.app"
+                        },
+                        "github":{
+                            "title": "Ver código en github",
+                            "url": "..."
                         },
                         "details":{
                             "title": "Más Información"

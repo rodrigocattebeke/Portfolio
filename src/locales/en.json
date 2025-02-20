@@ -1,158 +1,185 @@
 {
-    "menuSections": [{
-        "title": "Home",
-        "url": "#heroSection"
-        },{
-        "title": "About Me",
-        "url": "#aboutMe"
-        },{
-        "title": "My Projects",
-        "url": "#projects"   
-        },{
-        "title": "My Skills",
-        "url": "#skills"
-        },{
-        "title": "What do I offer you?",
-        "url": "#services"
-        },{
-        "title": "Interested?",
-        "url": "#interested"
-        }],
-    "heroSection":{
-        "greeting": "Hello, i am",
-        "name": "Rodrigo Cattebeke",
-        "rol": "Frontend Developer",
-        "buttonText": "Contact Me"
+  "menuSections": [
+    {
+      "title": "Home",
+      "url": "#heroSection"
     },
-    "aboutMe": {
-        "title": "About Me",
-        "bodyParagraphs": ["Hello, I am Rodrigo Cattebeke, a frontend developer from Paraguay with a great passion for creating web solutions.",
-        "Although I am still in the learning process, I have worked on personal projects, highlighting an ecommerce made in React. This project has allowed me to apply my knowledge in technologies such as JavaScript, CSS, HTML, and React, covering key functionalities of a real ecommerce, such as product management and purchasing flow.","I specialize in React, and i have knowledge of Bootstrap to design modern and responsive interfaces. Additionally, I strive to maintain clear and effective communication with clients, always seeking to deliver quality work."]
+    {
+      "title": "About Me",
+      "url": "#aboutMe"
     },
-    "myProjects":{
-        "title": "My Projects",
-        "projects": [
-            {
-                "title": "LyR Express",
-                "description": "LyR Express is a complete ecommerce, with a shopping cart and an intuitive checkout flow, all built with React and Bootstrap.",
-                "type": {
-                    "title": "Type",
-                    "description":"Ecomerce"
-                },
-                "technologies": {
-                    "title": "Technologies",
-                    "description": ["React", "JavaScript", "Bootstrap", "CSS"]
-                },
-                "images": [
-                    { 
-                        "img": "/src/assets/img/mockups/lyrexpress/desktop.png", "name": "Site Desktop Mockup" 
-                    },{ 
-                        "img": "/src/assets/img/mockups/lyrexpress/mobile.png", 
-                        "name": "Site Mobile Mockup" 
-                    },{ 
-                        "img": "/src/assets/img/mockups/lyrexpress/tablet.png", 
-                        "name": "Site Tablet Mockup" 
-                    }
-                ],
-                "links": {
-                    "website": {
-                        "title": "View Project",
-                        "url": "https://lyrexpress.netlify.app"
-                    },
-                    "details":{
-                        "title": "More Information"
-                    }
-                },
-                "moreInformation": {
-                        "title":"LyR Express",
-                        "description": ["LyR Express es un ecommerce completamente funcional desarrollado en React. La plataforma incluye todas las características esenciales para una tienda en línea, como un carrito de compras interactivo, gestión de productos, y un flujo de checkout optimizado." , "Utilizando componentes de Bootstrap, se ha asegurado una experiencia de usuario intuitiva y responsiva en todos los dispositivos."],
-                        "collapsableDescriptions": [
-                            {
-                                "title": "Características clave",
-                                "description": ["Interfaz responsiva: Diseño optimizado para dispositivos móviles y escritorio." , "Gestión de pedidos: Los usuarios pueden realizar seguimiento de sus compras.","Proceso de compra simplificado: Flujo de checkout sencillo con pasos claros, con opción para guardar direcciones de envío  para futuras compras."], 
-                                "isList": true
-                            },
-                            {
-                                "title":"Tecnologías usadas",
-                                "description": ["React" , "JavaScript" , "Bootstrap" , "CSS"],
-                                "isList": true
-                            },
-                            {
-                                "title": "Proceso de desarrollo",
-                                "description": ["El proceso de desarrollo comenzó con la planificación de las funcionalidades clave y las páginas necesarias para el proyecto, asegurando que todos los componentes esenciales estuvieran cubiertos. Sin embargo, uno de los errores más grandes fue no haber realizado los bocetos ni los diseños previos en Figma antes de empezar a codificar." , "En lugar de eso, fui agregando los diseños y la estructura de la interfaz de usuario de forma gradual durante el desarrollo. Aunque esto permitió avanzar rápidamente, aprendí que es crucial contar con una planificación visual detallada y un diseño previo antes de comenzar la implementación." , "Esta experiencia me ha enseñado la importancia de dedicar tiempo a la fase de diseño, y lo aplicaré en mis futuros proyectos."],
-                                "isList": false
-                            }
-                        ]
-                    }
-            }
-        ]
+    {
+      "title": "My Projects",
+      "url": "#projects"
     },
-    "mySkills":{
-        "title": "My Skills",
-        "skills":[
-            { 
-                "skill": "React",
-                "percentage":45
-            },
-            {
-                "skill": "JavaScript",
-                "percentage": 60
-            },
-            {
-                "skill": "CSS",
-                "percentage": 60
-            }
-        ]
+    {
+      "title": "My Skills",
+      "url": "#skills"
     },
-    "services":{
-        "title": "What do I offer you?",
-        "servicesCards": [
-            {
-                "icon": "EngineeringIcon",
-                "title": "Custom Project Development",
-                "description": "I create custom solutions that fit each client's needs, from functional e-commerce to modern, interactive interfaces."
-            },{
-                "icon": "WebIcon",
-                "title": "Responsive Frontend Development",
-                "description": "I build custom solutions, such as dynamic web applications and functional e-commerce. Initial design in tools such as Figma for prototypes and wireframes."
-            },{
-                "icon": "AutorenewIcon",
-                "title": "Site Maintenance and Updating",
-                "description": "I offer support and updates to keep your website secure, optimized and running smoothly."
-            },{
-                "icon": "ForumIcon",
-                "title": "Collaboration and Effective Comunication",
-                "description": "I maintain open and constant communication with my clients, ensuring that the result meets their expectations."
-            }
-        ]
-    }       ,
-    "interested":{
-        "title": "Interested?",
-        "cardInformation":{
-            "img": "..",
-            "title": "Rodrigo Cattebeke",
-            "description": "Frontend Developer",
-            "icons":[
-                {
-                    "icon":"LinkedinIcon",
-                    "url": "..."            
-                },{
-                    "icon":"GithubIcon",
-                    "url": "..."            
-                },{
-                    "icon":"MailIcon",
-                    "url": "..."            
-                },{
-                    "icon":"PhoneIcon",
-                    "url": "..."            
-                }
-            ]
-        },
-        "formTexts":{
-            "name": "Name",
-            "email": "Email",
-            "textarea": "Write your message",
-            "submitButton": "Send Message"
-        }
+    {
+      "title": "What do I offer you?",
+      "url": "#services"
+    },
+    {
+      "title": "Interested?",
+      "url": "#interested"
     }
+  ],
+  "heroSection": {
+    "greeting": "Hello, i am",
+    "name": "Rodrigo Cattebeke",
+    "rol": "Frontend Developer",
+    "buttonText": "Contact Me"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "bodyParagraphs": [
+      "Hello, I am Rodrigo Cattebeke, a frontend developer from Paraguay with a great passion for creating web solutions.",
+      "Although I am still in the learning process, I have worked on personal projects, highlighting an ecommerce made in React. This project has allowed me to apply my knowledge in technologies such as JavaScript, CSS, HTML, and React, covering key functionalities of a real ecommerce, such as product management and purchasing flow.",
+      "I specialize in React, and i have knowledge of Bootstrap to design modern and responsive interfaces. Additionally, I strive to maintain clear and effective communication with clients, always seeking to deliver quality work."
+    ]
+  },
+  "myProjects": {
+    "title": "My Projects",
+    "projects": [
+      {
+        "title": "LyR Express",
+        "description": "LyR Express is a complete ecommerce, with a shopping cart and an intuitive checkout flow, all built with React and Bootstrap.",
+        "type": {
+          "title": "Type",
+          "description": "Ecomerce"
+        },
+        "technologies": {
+          "title": "Technologies",
+          "description": ["React", "JavaScript", "Bootstrap", "CSS"]
+        },
+        "images": [
+          {
+            "img": "DesktopMockup",
+            "name": "Site Desktop Mockup"
+          },
+          {
+            "img": "MobileMockup",
+            "name": "Site Mobile Mockup"
+          },
+          {
+            "img": "TabletMockup",
+            "name": "Site Tablet Mockup"
+          }
+        ],
+        "links": {
+          "website": {
+            "title": "View project",
+            "url": "https://lyrexpress.netlify.app"
+          },
+          "github": {
+            "title": "View code on GitHub",
+            "url": "..."
+          },
+          "details": {
+            "title": "More Information"
+          }
+        },
+        "moreInformation": {
+          "title": "LyR Express",
+          "description": ["LyR Express es un ecommerce completamente funcional desarrollado en React. La plataforma incluye todas las características esenciales para una tienda en línea, como un carrito de compras interactivo, gestión de productos, y un flujo de checkout optimizado.", "Utilizando componentes de Bootstrap, se ha asegurado una experiencia de usuario intuitiva y responsiva en todos los dispositivos."],
+          "collapsableDescriptions": [
+            {
+              "title": "Características clave",
+              "description": ["Interfaz responsiva: Diseño optimizado para dispositivos móviles y escritorio.", "Gestión de pedidos: Los usuarios pueden realizar seguimiento de sus compras.", "Proceso de compra simplificado: Flujo de checkout sencillo con pasos claros, con opción para guardar direcciones de envío  para futuras compras."],
+              "isList": true
+            },
+            {
+              "title": "Tecnologías usadas",
+              "description": ["React", "JavaScript", "Bootstrap", "CSS"],
+              "isList": true
+            },
+            {
+              "title": "Proceso de desarrollo",
+              "description": [
+                "El proceso de desarrollo comenzó con la planificación de las funcionalidades clave y las páginas necesarias para el proyecto, asegurando que todos los componentes esenciales estuvieran cubiertos. Sin embargo, uno de los errores más grandes fue no haber realizado los bocetos ni los diseños previos en Figma antes de empezar a codificar.",
+                "En lugar de eso, fui agregando los diseños y la estructura de la interfaz de usuario de forma gradual durante el desarrollo. Aunque esto permitió avanzar rápidamente, aprendí que es crucial contar con una planificación visual detallada y un diseño previo antes de comenzar la implementación.",
+                "Esta experiencia me ha enseñado la importancia de dedicar tiempo a la fase de diseño, y lo aplicaré en mis futuros proyectos."
+              ],
+              "isList": false
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "mySkills": {
+    "title": "My Skills",
+    "skills": [
+      {
+        "skill": "React",
+        "percentage": 45
+      },
+      {
+        "skill": "JavaScript",
+        "percentage": 60
+      },
+      {
+        "skill": "CSS",
+        "percentage": 60
+      }
+    ]
+  },
+  "services": {
+    "title": "What do I offer you?",
+    "servicesCards": [
+      {
+        "icon": "EngineeringIcon",
+        "title": "Custom Project Development",
+        "description": "I create custom solutions that fit each client's needs, from functional e-commerce to modern, interactive interfaces."
+      },
+      {
+        "icon": "WebIcon",
+        "title": "Responsive Frontend Development",
+        "description": "I build custom solutions, such as dynamic web applications and functional e-commerce. Initial design in tools such as Figma for prototypes and wireframes."
+      },
+      {
+        "icon": "AutorenewIcon",
+        "title": "Site Maintenance and Updating",
+        "description": "I offer support and updates to keep your website secure, optimized and running smoothly."
+      },
+      {
+        "icon": "ForumIcon",
+        "title": "Collaboration and Effective Comunication",
+        "description": "I maintain open and constant communication with my clients, ensuring that the result meets their expectations."
+      }
+    ]
+  },
+  "interested": {
+    "title": "Interested?",
+    "cardInformation": {
+      "img": "..",
+      "title": "Rodrigo Cattebeke",
+      "description": "Frontend Developer",
+      "icons": [
+        {
+          "icon": "LinkedinIcon",
+          "url": "..."
+        },
+        {
+          "icon": "GithubIcon",
+          "url": "..."
+        },
+        {
+          "icon": "MailIcon",
+          "url": "..."
+        },
+        {
+          "icon": "PhoneIcon",
+          "url": "..."
+        }
+      ]
+    },
+    "formTexts": {
+      "name": "Name",
+      "email": "Email",
+      "textarea": "Write your message",
+      "submitButton": "Send Message"
+    }
+  }
 }

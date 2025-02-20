@@ -12,5 +12,6 @@ import DarkModeIcon from "./dark_mode.svg?react";
 import LightModeIcon from "./light_mode.svg?react";
 import CloseIcon from "./close.svg?react";
 import LanguageIcon from "./language.svg?react";
+import InfoIcon from "./info.svg?react";
 
-export { ArrowDownIcon, CloseIcon, MenuIcon, AutorenewIcon, DarkModeIcon, EngineeringIcon, ForumIcon, LanguageIcon, WebIcon, LightModeIcon, LinkedinIcon, MailIcon, PhoneIcon, GithubIcon };
+export { ArrowDownIcon, CloseIcon, MenuIcon, AutorenewIcon, DarkModeIcon, EngineeringIcon, ForumIcon, InfoIcon, LanguageIcon, WebIcon, LightModeIcon, LinkedinIcon, MailIcon, PhoneIcon, GithubIcon };
