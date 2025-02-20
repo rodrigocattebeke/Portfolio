@@ -9,7 +9,7 @@ export const Interested = () => {
   const { languageSelected } = useContext(LanguageContext);
 
   return (
-    <section id="interested" className={`${styles.container} container-xl section`}>
+    <section id="interested" className={`${styles.container} container-xxl section`}>
       <Title>
         <h2>{languageSelected.translations.interested.title}</h2>
       </Title>

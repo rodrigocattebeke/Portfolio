@@ -43,19 +43,30 @@ export const ProjectInformationModal = ({ projectInformation = null, isActive, c
             ))}
 
             {/* Collapsable Descriptions */}
-            {projectInformation.moreInformation.collapsableDescriptions.map((desc, i) => (
+            {projectInformation.moreInformation.collapsableDescriptions.map((description, i) => (
               <div key={i}>
                 {/* Collapse activator  */}
                 <div className={`${styles.collapsableActivator}`} data-bs-toggle="collapse" data-bs-target={`#collapseDescription${i}`} aria-expanded="false" aria-controls="collapsable description">
                   <p>
-                    <span style={{ fontWeight: "bold" }}>{desc.title}</span>
+                    <span style={{ fontWeight: "bold" }}>{description.title}</span>
                   </p>
                   <ArrowDownIcon className="icon" />
                 </div>
 
                 {/* Collapsable description */}
                 <div className={`${styles.collapsableDescContainer} collapse`} id={`collapseDescription${i}`}>
-                  <div className="card card-body">{desc.description}</div>
+                  <div className="card card-body">
+                    {/* Verify if the description is list, or simple paragraph */}
+                    {description.isList ? (
+                      <ul>
+                        {description.description.map((desc, i) => (
+                          <li key={i}>{desc}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      description.description.map((desc, i) => <p key={i}>{desc}</p>)
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
