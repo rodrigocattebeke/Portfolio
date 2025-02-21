@@ -188,6 +188,7 @@
       "email": "Email",
       "textarea": "Write your message",
       "submitButton": "Send Message"
-    }
+    },
+    "modalText": "Message sent"
   }
 }
