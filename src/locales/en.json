@@ -1,4 +1,12 @@
 {
+  "preferencesMenu": {
+    "language": {
+      "title": "Choose language"
+    },
+    "theme": {
+      "title": "Change theme"
+    }
+  },
   "menuSections": [
     {
       "title": "Home",

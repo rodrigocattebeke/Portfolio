@@ -126,7 +126,6 @@ body.fadeText p, body.fadeText span,body.fadeText small,body.fadeText li, body.f
     width:2.5rem ;
     height: 2.5rem;
     fill: var(--primary-color);
-    transition: .5s;
 }
 
 .section{

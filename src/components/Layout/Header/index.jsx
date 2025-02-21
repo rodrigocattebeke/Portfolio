@@ -24,7 +24,7 @@ export const Header = () => {
                 <h3 className={`${styles.headerTitle}`}>Rodrigo Cattebeke</h3>
               </div>
               <div className="col-3 p-0 d-flex gap-2 align-items-center justify-content-end">
-                <div>
+                <div className="d-none d-md-block">
                   <LanguageSwitch />
                 </div>
                 <div className="d-none d-md-block">

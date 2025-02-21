@@ -8,7 +8,7 @@ import { MySkills } from "./components/Sections/MySkills";
 import { Services } from "./components/Sections/Services";
 import { useEffect } from "react";
 import { ThemeProvider } from "./contexts/ThemeProvider";
-import { MobileThemeSwitch } from "./components/Common/MobileThemeSwitch";
+import { PreferencesMenu } from "./components/Common/PreferencesMenu";
 import { LanguageProvider } from "./contexts/LanguageProvider";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <LanguageProvider>
         <ThemeProvider>
           <Header />
-          <MobileThemeSwitch />
+          <PreferencesMenu />
         </ThemeProvider>
         <HeroSection />
         <AboutMe />

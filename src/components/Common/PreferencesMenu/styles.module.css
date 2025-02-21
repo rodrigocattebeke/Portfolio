@@ -4,16 +4,19 @@
     width: auto;
     right: 0;
     bottom: 4rem;
-    transform: translateX(calc(100% - 2.8rem));
+    transform: translateY(60%) translateX(calc(100% - 2.8rem)); /*2.8rem is the open/close btn width*/
     border-radius: 5px 0 0 5px;
     overflow: hidden;
-    transition: .6s ease-in-out;
-    animation: entryRight 1s ease-in-out;
     z-index: 99;
 }
 
 .container.active{
-    transform: translateX(0)
+    transform: translateX(0) translateY(0);
+    animation: openMenu 1s ease-in-out;
+}
+
+.container.close{
+    animation: closeMenu 1s ease-in-out;
 }
 
 .openBtn{
@@ -39,7 +42,6 @@
     right: 0;
     clip-path: polygon(0 0, 25% 30% , 50% 40% , 75% 30% , 100% 0 , 50% 100%);
     transform: translateX(50%) translateY(55%) rotateZ(-130deg);
-
     z-index: 4;
 }
 
@@ -47,8 +49,12 @@
     width: 100%;
     height: 100%;
     fill: var(--primary-color);
-    transition: .5s;
     z-index: 5;
+}
+
+.switchersContainer{
+    padding: 0 1rem;
+    background-color: var(--background-color-tertiary);
 }
 
 .switchContainer{
@@ -61,7 +67,6 @@
     padding: .9rem;
     row-gap: 1rem;
     border-bottom-left-radius: 5px ;
-    background-color: var(--background-color-tertiary);
 }
 
 .switchContainer p{
@@ -70,11 +75,43 @@
 }
 
 
- @keyframes entryRight {
+@keyframes appear {
     0%{
-        transform: translateX(100%)
+        transform: translateX(100%);
     }
     100%{
         transform: translateX(calc(100% - 2.8rem));
+    }
+}
+
+ @keyframes closeMenu {
+    0%{
+        transform: translateY(0) translateX(0); 
+    }
+    50%{
+        transform: translateY(0) translateX(calc(100% - 2.8rem)); /*2.8rem is the open/close btn width*/;
+    }
+    100%{
+        transform: translateY(60%) translateX(calc(100% - 2.8rem));
+    }
+ }
+
+ @keyframes openMenu {
+    0%{
+        transform: translateY(60%) translateX(calc(100% - 2.8rem)); /*2.8rem is the open/close btn width*/;
+    }
+    50%{
+        transform: translateY(0) translateX(calc(100% - 2.8rem));
+    }
+    100%{
+        transform: translateY(0) translateX(0);
+    }
+ }
+
+
+ @media screen and (min-width: 768px) {
+    .container{
+        visibility: hidden;
+        opacity: 0;
     }
  }
