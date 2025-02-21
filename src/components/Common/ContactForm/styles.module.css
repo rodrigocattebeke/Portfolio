@@ -11,6 +11,9 @@
     z-index: 99;
     visibility: hidden;  
     opacity: 0;  
+}
+
+.container.close{
     animation: close .3s ease-in-out;
 }
 
